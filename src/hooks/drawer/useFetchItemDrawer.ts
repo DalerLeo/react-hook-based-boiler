@@ -4,12 +4,12 @@ import { useEffect } from 'react'
 import equal from 'react-fast-compare'
 import { getDataFromState } from 'utils/getTyped'
 */
-/*import { useTypedSelector, usePromiseDispatch } from 'etc/reducers'
-import { useQuery } from 'hooks'*/
+/* import { useTypedSelector, usePromiseDispatch } from 'etc/reducers'
+import { useQuery } from 'hooks' */
 import { useHistory } from 'react-router-dom'
 import { replaceParamsRoute } from 'utils/route'
 
-export const useFetchItemDrawer = <T extends any>(params) => {
+export const useFetchItemDrawer = <T extends any>() => {
 /*  const { stateName, action, key = ITEM_OPEN_KEY } = params
   const id = useQuery(key)
 
@@ -25,7 +25,7 @@ export const useFetchItemDrawer = <T extends any>(params) => {
     [id]
   )
 
-  return stateName*/
+  return stateName */
   return null
 }
 

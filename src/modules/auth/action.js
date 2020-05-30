@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import * as API from 'constants/api'
 import { prop } from 'ramda'
 import { setCookie } from 'utils/cookie'

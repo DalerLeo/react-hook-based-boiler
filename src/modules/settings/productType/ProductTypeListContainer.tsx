@@ -10,7 +10,9 @@ import ProductTypeUpdateContainer from './ProductTypeUpdateContainer'
 
 const ProductTypeListContainer = () => {
   const productTypeList = useProductTypeList(EMPTY_OBJ)
-  const productTypeDelete = useProductTypeDelete()
+  const productTypeDelete = useProductTypeDelete(
+    () => productTypeList.get()
+  )
 
   const onCreateOpen = useOpenCreateDrawer()
   const onEdit = useOpenUpdateDrawer()
@@ -24,10 +26,10 @@ const ProductTypeListContainer = () => {
         onCreateOpen={onCreateOpen}
       />
       <CreateDrawer>
-        <ProductTypeCreateContainer />
+        <ProductTypeCreateContainer getList={productTypeList.get}/>
       </CreateDrawer>
       <UpdateDrawer>
-        <ProductTypeUpdateContainer />
+        <ProductTypeUpdateContainer/>
       </UpdateDrawer>
     </>
   )

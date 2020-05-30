@@ -1,5 +1,6 @@
 export { default as useCompareEffect } from './useCompareEffect'
 export * from './utils'
+export * from './drawer'
 /*
 export { default as useFetchList } from './useFetchList'
 export { default as useFetchItem } from './useFetchItem'

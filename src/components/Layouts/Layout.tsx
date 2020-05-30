@@ -4,13 +4,10 @@ import BaseLayout from './BaseLayout'
 
 const Layout: FunctionComponent = props => {
   return (
-    <Container>
-      {props.children}
-    </Container>
-  )
-  return (
     <BaseLayout>
-      {props.children}
+      <Container>
+        {props.children}
+      </Container>
     </BaseLayout>
   )
 }

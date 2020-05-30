@@ -1,4 +1,3 @@
-import * as API from 'constants/api'
 import React, { FunctionComponent } from 'react'
 import { Field, FormRenderProps } from 'react-final-form'
 

@@ -1,4 +1,4 @@
-import React, {FunctionComponent} from 'react'
+import React, { FunctionComponent } from 'react'
 import { TableRow as Row } from 'ui-cubic/dist/index.es'
 import { useHistory } from 'react-router-dom'
 

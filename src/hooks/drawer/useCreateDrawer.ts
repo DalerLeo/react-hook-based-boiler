@@ -1,7 +1,6 @@
 import { CREATE_OPEN } from 'constants/drawerConstants'
 import { useHistory } from 'react-router-dom'
 import { replaceParamsRoute } from 'utils/route'
-import { TUseCreate, TUseCreateDrawerParams } from 'types/hooks'
 /*
 import equals from 'react-fast-compare'
 import { TGetDataFromState } from 'types'
@@ -17,9 +16,14 @@ export const useOpenCreateDrawer = (key = CREATE_OPEN) => {
   const history = useHistory()
   return () => replaceParamsRoute({ [key]: true }, history)
 }
+export const useCloseCreateDrawer = (key = CREATE_OPEN) => {
+  const history = useHistory()
+  return () => replaceParamsRoute({ [key]: null }, history)
+}
 
+/*
 export const useCreateDrawer = <T extends any>(params: TUseCreateDrawerParams): TUseCreate => {
- /* const {
+  /!* const {
     key = CREATE_OPEN,
     action,
     stateName,
@@ -49,7 +53,8 @@ export const useCreateDrawer = <T extends any>(params: TUseCreateDrawerParams): 
       .catch(mapResponseToFormError)
   }
 
-  return { onSubmit, ...data }*/
+  return { onSubmit, ...data } *!/
 
- return null
+  return null
 }
+*/

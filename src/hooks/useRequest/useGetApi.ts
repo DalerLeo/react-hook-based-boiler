@@ -10,7 +10,6 @@ import useRequestReducer,
 const useGetApi = <T extends any>(API) => {
   const [state, dispatch] = useRequestReducer<T>()
 
-
   const request = async (config?: any) => {
     dispatch({ TYPE: PENDING })
     try {

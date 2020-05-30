@@ -5,7 +5,6 @@ import { ButtonSmall } from 'components/UX/Buttons'
 import { Form, Field } from 'react-final-form'
 import { InputField } from 'components/Form'
 import { TState, TSubmit } from 'types/hooks'
-import Layout from '../Layout'
 
 const FieldWrapper = styled.div`
   margin-bottom: 25px;
@@ -37,6 +36,7 @@ const SignIn = (props: Props) => {
               name="password"
               placeholder="Пароль"
               component={InputField}
+              type="password"
             />
           </FieldWrapper>
           <ButtonSmall loading={state.loading} fullWidth={true} type="submit">войти</ButtonSmall>

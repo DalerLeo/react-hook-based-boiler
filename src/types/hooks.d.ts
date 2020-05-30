@@ -9,6 +9,15 @@ export type TState<T = any> = {
     failed: boolean;
 }
 
+export type TConfirmState<T = any> = {
+    open: boolean,
+    title: string,
+    message: string,
+    onConfirm: () => void,
+    loading: boolean,
+}
+export type TConfirmReducer<T = any> = (state: TConfirmState<T>, action) => TConfirmState<T>
+
 export type TData<T extends Record<string, any>> = {
     count: number;
     results: T[];
@@ -122,5 +131,5 @@ export type TUseCreate = Merge<TGetDataFromState<any | null>, {onSubmit: TOnSubm
 export type TOnSubmit = (action: any) => Promise<void | Pick<any, string | number | symbol>>
 export type TUseDelete = Merge<TGetDataFromState<any | null>, {onSubmit: TOnSubmit}>
 export type TUseRemove = {remove: TOnSubmit, state: TState<any | null>}
+export type TUseConfirmRemove = {onSubmit: (id) => void, state: TState<any | null>}
 export type TUseConfirm = Merge<TGetDataFromState<any | null>, {onSubmit: TOnSubmit}>
-

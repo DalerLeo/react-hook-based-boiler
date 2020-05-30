@@ -2,8 +2,7 @@ import * as API from 'constants/api'
 import {
   usePostApi,
   useGetApi,
-  useDeleteApi,
-  usePutApi
+  usePutApi, useDeleteConfirm
 } from 'hooks/useRequest'
 import { sprintf } from 'sprintf-js'
 import { useEffect } from 'react'
@@ -11,8 +10,11 @@ import { TData, TProductTypeItem, TUseListParams } from 'types'
 import { useCompareEffect, usePickSearchParams } from 'hooks'
 import { DEFAULT_PICK_PARAMS } from 'utils/isEquals'
 
-export const useProductTypeDelete = () => {
-  return useDeleteApi<TProductTypeItem>(API.QUESTION_ITEM)
+export const useProductTypeDelete = (onSuccess) => {
+  return useDeleteConfirm<TProductTypeItem>({
+    api: API.PRODUCT_TYPE_DELETE,
+    onSuccess,
+  })
 }
 
 export const useProductTypeList = (params: TUseListParams) => {

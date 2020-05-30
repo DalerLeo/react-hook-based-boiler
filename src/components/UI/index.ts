@@ -27,3 +27,4 @@ export {
 export { default as Drawer } from './Drawer'
 export { default as DropdownItem } from './DropDownItem'
 export * from './Buttons'
+export { default as Modal } from './Modal'

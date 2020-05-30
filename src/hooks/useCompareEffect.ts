@@ -1,5 +1,6 @@
 import React from 'react'
-import { equals as deepEqual } from 'ramda'
+import deepEqual from 'react-fast-compare'
+/*
 
 function isPrimitive (val): boolean {
   return val == null || /^[sbn]/.test(typeof val)
@@ -13,10 +14,11 @@ function checkDeps (deps) {
   }
   if (deps.every(isPrimitive)) {
     throw new Error(
-      'useDeepCompareEffect should not be used with dependencies that are all primitive values. Use React.useEffect instead.',
+      'useDeepCompareEffect should not be used with dependencies that are all primitive values. Use React.useEffect'
     )
   }
 }
+*/
 
 function useDeepCompareMemoize (value) {
   const ref = React.useRef()
@@ -30,7 +32,7 @@ function useDeepCompareMemoize (value) {
 
 function useCompareEffect (callback, dependencies) {
   if (process.env.NODE_ENV !== 'production') {
-//    checkDeps(dependencies)
+    //    checkDeps(dependencies)
   }
   React.useEffect(callback, useDeepCompareMemoize(dependencies))
 }

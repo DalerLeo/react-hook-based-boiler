@@ -5,7 +5,7 @@ export const API_PROTOCOL = 'http'
 export const API_URL = `${API_PROTOCOL}://${API_HOST}`
 
 const MAIN = 'main'
-export const CHECK_TOKEN = '/main/clients/check_token/%s/'
+export const CHECK_TOKEN = '/main/check_token/%s/'
 export const LOGIN = `${MAIN}/login/`
 export const LOGOUT = `${MAIN}/logout/`
 
@@ -30,11 +30,9 @@ export const QUESTION_ITEM = `/${QUESTION}/%d/`
 export const QUESTION_UPDATE = `/${QUESTION}/%d/`
 export const QUESTION_REMOVE = `/${QUESTION}/%d/`
 
-
 const PRODUCT_TYPE = `${MAIN}/product_type`
 export const PRODUCT_TYPE_LIST = `/${PRODUCT_TYPE}/`
 export const PRODUCT_TYPE_CREATE = `/${PRODUCT_TYPE}/`
 export const PRODUCT_TYPE_ITEM = `/${PRODUCT_TYPE}/%d/`
 export const PRODUCT_TYPE_DELETE = `/${PRODUCT_TYPE}/%d/`
 export const PRODUCT_TYPE_UPDATE = `/${PRODUCT_TYPE}/%d/`
-

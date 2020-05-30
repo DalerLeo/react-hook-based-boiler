@@ -6,7 +6,6 @@ import { default as InputAddon } from './Basic/InputAddon'
 import { default as InputField } from './Basic/InputField'
 import { default as RadioButtonBorderedField } from './Basic/RadioButtonBorderedField'
 import { default as RadioButtonField } from './Basic/RadioButtonField'
-import { default as RadioGroupField } from './Basic/RadioGroupField'
 import { default as TextArea } from './Basic/TextArea'
 
 export { Field, Form } from 'react-final-form'

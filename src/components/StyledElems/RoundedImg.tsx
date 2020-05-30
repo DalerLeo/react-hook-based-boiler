@@ -1,6 +1,5 @@
-import {ImgHTMLAttributes} from 'react'
+import { ImgHTMLAttributes } from 'react'
 import styled from 'styled-components'
-
 
 type Props = {
   src: string | null;

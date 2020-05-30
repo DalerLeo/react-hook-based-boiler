@@ -3,13 +3,13 @@ import arrayMutators from 'final-form-arrays'
 import {
   Form,
 } from 'react-final-form'
-import {TOnSubmit, TUseUpdate} from 'types'
+import { TOnSubmit } from 'types'
 
 import { DrawerSkeleton } from 'components/Skeletons'
 import ProductTypeCreateForm from './ProductTypeCreateForm'
 
 type Props = {
-    initialValues: object;
+    initialValues: Record<string, any>;
     updateLoading: boolean,
     loading: boolean;
     onSubmit: TOnSubmit

@@ -59,7 +59,7 @@ const Socials = styled.div`
 `
 
 const Layout = (props) => {
-  const { children, height } = props
+  const { children } = props
 
   return (
     <LoginLayout>

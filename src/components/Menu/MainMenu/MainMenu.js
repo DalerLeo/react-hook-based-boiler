@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import { prop } from 'ramda'
+import { omit, prop } from 'ramda'
 import { Link } from 'react-router-dom'
 import mapIndexed from '../../../utils/mapIndexed'
 import menus from '../../../constants/menus'
 
-const SubMenuItems = styled(({ isActive, ...props }) => <Link {...props} />)`
+const SubMenuItems = styled(props => <Link {...omit(['isActive'], props)} />)`
   border-radius: ${props => props.theme.input.borderRadius.md};
   color: ${props => props.theme.input.labelColor};
   cursor: pointer;

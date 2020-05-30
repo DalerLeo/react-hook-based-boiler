@@ -4,7 +4,7 @@ import SvgIcon from './SvgIcon'
 
 export default props => {
   return (
-    <SvgIcon width="10" height="10" viewBox="0 0 10 10"  {...props}>
+    <SvgIcon width="10" height="10" viewBox="0 0 10 10" {...props}>
 
       <g clipPath="url(#clip0)">
         <path d="M1.25 8.74999C1.25 9.43907 1.8106 9.99998 2.49999 9.99998H7.49999C8.18938 9.99998 8.74998 9.43907 8.74998 8.74999V2.5H1.25V8.74999Z" />

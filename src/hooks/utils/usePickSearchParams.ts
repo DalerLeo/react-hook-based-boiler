@@ -1,4 +1,3 @@
-import { useQueries } from 'hooks/utils/useQuery'
 import { DEFAULT_PICK_PARAMS } from 'utils/isEquals'
 import useRoute from 'hooks/utils/useRoute'
 

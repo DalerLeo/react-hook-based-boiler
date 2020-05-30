@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 // eslint-disable-next-line import/named
 import { DefaultTheme } from 'styled-components'
 
@@ -45,14 +47,12 @@ export const cubeTheme = {
       hover: '#fbfbfb',
       label: '',
       placeholder: '',
-      border: 'red'
+      border: '#eaebee'
     }
   },
 }
 
 const theme: DefaultTheme = {
-// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-// @ts-ignore
   cube: cubeTheme,
   border: '1px solid #E0E0E0',
   borderColor: '#eaebee',

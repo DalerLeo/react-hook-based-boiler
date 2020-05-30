@@ -16,7 +16,6 @@ const CreateDrawer: FunctionComponent<Props> = props => {
   const history = useHistory()
   const onClose = () => replaceParamsRoute({ [key]: null }, history)
 
-
   return (
     <Drawer open={Boolean(open)} onClose={onClose}>
       {React.cloneElement(children, { onClose })}

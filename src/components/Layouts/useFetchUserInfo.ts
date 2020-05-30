@@ -10,8 +10,6 @@ const useFetchUserInfo = () => {
   const { clearData, setData, fetchingData, state: userData } = useUserData()
 
   const { checkToken } = useCheckToken()
-
-  console.warn(cookieToken, isAuth, userData)
   //  const token = path(['data', 'token'], userData)
 
   useEffect(() => {
@@ -29,7 +27,7 @@ const useFetchUserInfo = () => {
         })
         .catch(eee => {
           setIsAuth(false)
-          console.warn('FAILED')
+          console.warn('FAILED', eee)
           clearData()
         })
     }

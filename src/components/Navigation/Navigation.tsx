@@ -13,11 +13,11 @@ const NavWrapper = styled.div`
   justify-content: space-between;
   padding: 0 30px;
 `
-const Navigation = props => {
+const Navigation = () => {
   return (
     <NavWrapper>
-{/*      <Link to={ROUTES.CREATE_SURVEY_PATH}>Create</Link>
-      <Link to={ROUTES.MY_SURVEY}>My Survey</Link>*/}
+      {/*      <Link to={ROUTES.CREATE_SURVEY_PATH}>Create</Link>
+      <Link to={ROUTES.MY_SURVEY}>My Survey</Link> */}
       <Link to={ROUTES.DASHBOARD}>Dashboard</Link>
     </NavWrapper>
   )

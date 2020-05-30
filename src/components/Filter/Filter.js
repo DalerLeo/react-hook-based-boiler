@@ -1,8 +1,8 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import FilterIcon from '../../icons/Filter'
 import PropTypes from 'prop-types'
 import { Form } from 'react-final-form'
+import FilterIcon from '../../icons/Filter'
 import { Button, SecondaryButton } from '../UI'
 import { BorderedButtonSmall } from '../UI/Buttons'
 

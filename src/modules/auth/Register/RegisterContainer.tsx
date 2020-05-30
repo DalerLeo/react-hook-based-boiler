@@ -1,5 +1,5 @@
 import * as ROUTES from 'constants/routes'
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import { getSerializedData } from 'utils/get'
 import { useHistory } from 'react-router-dom'
@@ -9,7 +9,7 @@ import Register, { fields } from './Register'
 
 const serializer = values => getSerializedData(fields, values)
 
-const RegisterContainer = props => {
+const RegisterContainer = () => {
   const { onSubmit, ...state } = useRegister()
   const history = useHistory()
 

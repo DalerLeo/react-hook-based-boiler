@@ -1,5 +1,4 @@
 import React, { FunctionComponent } from 'react'
-import { Container } from 'components/StyledElems'
 import styled from 'styled-components'
 import BaseLayout from './BaseLayout'
 
@@ -8,11 +7,11 @@ const Wrapper = styled.div`
 `
 const MainLayout: FunctionComponent = props => {
   return (
-  /*    <BaseLayout> */
-    <Wrapper>
-      {props.children}
-    </Wrapper>
-  /*    </BaseLayout> */
+    <BaseLayout>
+      <Wrapper>
+        {props.children}
+      </Wrapper>
+    </BaseLayout>
   )
 }
 

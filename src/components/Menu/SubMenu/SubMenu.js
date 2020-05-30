@@ -1,9 +1,9 @@
-import menus from '../../../constants/menus'
 import * as R from 'ramda'
 import React from 'react'
 import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
 import styled, { keyframes } from 'styled-components'
+import menus from '../../../constants/menus'
 import mapIndexed from '../../../utils/mapIndexed'
 
 const borderAnimate = keyframes`

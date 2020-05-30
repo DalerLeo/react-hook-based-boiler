@@ -4,6 +4,7 @@ import AddIcon from 'icons/Add'
 import Radio from 'icons/Radio'
 import { DisplayFlex, ShadowBox } from 'components/StyledElems'
 import styled from 'styled-components'
+
 const types = [
   RADIO,
   CHECKBOX,
@@ -49,7 +50,7 @@ const AddButton: FunctionComponent<Props> = props => {
   const [open, setOpen] = useState(false)
   const onToggle = () => setOpen(open => !open)
 
-  const onItemClick = value => ev => {
+  const onItemClick = value => () => {
     onMenuItem(value)
     onToggle()
   }

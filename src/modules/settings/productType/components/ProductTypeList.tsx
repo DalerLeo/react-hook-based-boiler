@@ -12,13 +12,19 @@ import {
 } from 'components/Table'
 import { Box, Dropdown, DropdownItem } from 'components/UI'
 import Pagination from 'components/Pagination'
-import { TData, TUseRemove, TIdName, TState, TProductTypeItem } from 'types'
+import {
+  TData,
+  TIdName,
+  TState,
+  TProductTypeItem,
+  TUseConfirmRemove
+} from 'types'
 
 type Props = {
     data: TState<TData<TProductTypeItem>>;
     onEdit: (id) => void;
     onCreateOpen: () => void;
-    removeData: TUseRemove;
+    removeData: TUseConfirmRemove;
 }
 const EMPTY = []
 const ZERO = 0
@@ -59,7 +65,7 @@ const ProductTypeList: FunctionComponent<Props> = props => {
                       <DropdownItem onClick={() => onEdit(id)}>
                         Edit
                       </DropdownItem>
-                      <DropdownItem onClick={() => removeData.remove(id)}>
+                      <DropdownItem onClick={() => removeData.onSubmit(id)}>
                         Delete
                       </DropdownItem>
                     </Dropdown>

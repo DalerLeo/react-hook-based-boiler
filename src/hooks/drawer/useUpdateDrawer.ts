@@ -9,10 +9,10 @@ import { mapResponseToFormError } from 'utils/form'
 
 import { useTypedSelector, usePromiseDispatch } from 'etc/reducers'
 */
-import { TGetDataFromState, TUseUpdate, TUseUpdateDrawerParams } from 'types'
+import { TUseUpdate } from 'types'
 // import { getListParams } from 'hooks/useFetchList'
 // import { DEFAULT_PICK_PARAMS } from 'utils/isEquals'
-import { addParamsRoute, replaceParamsRoute } from 'utils/route'
+import { replaceParamsRoute } from 'utils/route'
 // import { useQuery } from 'hooks'
 
 export const useOpenUpdateDrawer = (key = UPDATE_OPEN_KEY) => {
@@ -20,7 +20,7 @@ export const useOpenUpdateDrawer = (key = UPDATE_OPEN_KEY) => {
   return (id) => replaceParamsRoute({ [key]: id }, history)
 }
 
-const useUpdateDrawer = <T extends any>(params: TUseUpdateDrawerParams): TUseUpdate => {
+const useUpdateDrawer = <T extends any>(): TUseUpdate => {
 /*  const {
     stateName,
     action,

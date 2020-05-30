@@ -1,6 +1,5 @@
 import axios from 'axios'
 import { path, equals, curry, prop, compose, isNil } from 'ramda'
-import * as actionTypes from '../constants/actionTypes'
 import { API_URL } from '../constants/api'
 import responseToCamelCase from './responseToCamelCase'
 import expireDocumentCookie from './expireDocumentCookie'
@@ -20,7 +19,7 @@ const errorInterceptors = curry((error) => {
   const status = path(['response', 'status'], error)
 
   if (equals(UNAUTHORIZED, status)) {
-    console.warn('AXIOS ERROR CLEAR')
+    //    console.warn('AXIOS ERROR CLEAR')
     expireDocumentCookie()
     //    window.location.pathname = '/login'
   }

@@ -17,5 +17,3 @@ export type IStore = {
 export type InitStore = {
 
 }
-
-

@@ -21,7 +21,7 @@ const MainBodyTable = styled.div`
   border-radius: 8px;
 `
 
-const MainBodySkeleton = props => {
+const MainBodySkeleton = () => {
   return (
     <div>
       <HeaderBox />

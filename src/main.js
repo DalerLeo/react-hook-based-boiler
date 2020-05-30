@@ -4,8 +4,6 @@ import './root.css'
 // ======================================================
 // Store Initialization
 // ======================================================
-const initialState = window.__INITIAL_STATE__
-
 
 const MOUNT_NODE = document.getElementById('app')
 

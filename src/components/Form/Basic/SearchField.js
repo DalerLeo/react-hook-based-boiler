@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer } from 'react'
+import React, { useReducer } from 'react'
 import PropTypes from 'prop-types'
 import {
   path,
@@ -11,7 +11,7 @@ import {
   not,
   is
 } from 'ramda'
-/*import {
+/* import {
   compose,
   withReducer,
   mapPropsStream,
@@ -27,7 +27,7 @@ import {
   filter,
   distinctUntilChanged,
   debounceTime
-} from 'rxjs/operators'*/
+} from 'rxjs/operators' */
 import { Select } from 'ui-cubic'
 import { useCompareEffect } from '../../../hooks'
 import { getFieldError } from '~/utils/form'
@@ -346,7 +346,7 @@ const SearchField = props => {
     input,
     meta,
     label,
-//    onFetchData,
+    //    onFetchData,
     disabled,
     isClearable,
     isStatic
