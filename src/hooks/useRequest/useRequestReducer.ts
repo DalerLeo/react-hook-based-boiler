@@ -1,4 +1,4 @@
-import { useReducer } from 'react'
+import { useEffect, useReducer, useRef } from 'react'
 import { path } from 'ramda'
 import { TState } from 'types'
 import { TReducer, TUseReducer } from 'types/hooks'
@@ -48,7 +48,10 @@ const reducer = (state: TState, action) => {
 }
 
 const useRequestReducer = <T = any>(): TUseReducer<T> => {
-  const [state, dispatch] = useReducer<TReducer<T>>(reducer, initialState)
+  const mountedRef = useRef(true)
+  useEffect(() => () => { mountedRef.current = false }, [])
+  const [state, update] = useReducer<TReducer<T>>(reducer, initialState)
+  const dispatch = v => mountedRef.current && update(v)
   return [state, dispatch]
 }
 

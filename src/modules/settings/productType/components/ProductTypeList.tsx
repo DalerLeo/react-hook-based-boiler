@@ -19,6 +19,7 @@ import {
   TProductTypeItem,
   TUseConfirmRemove
 } from 'types'
+import baseAuth from "components/Layouts/baseAuth";
 
 type Props = {
     data: TState<TData<TProductTypeItem>>;
@@ -26,6 +27,8 @@ type Props = {
     onCreateOpen: () => void;
     removeData: TUseConfirmRemove;
 }
+
+
 const EMPTY = []
 const ZERO = 0
 const ProductTypeList: FunctionComponent<Props> = props => {

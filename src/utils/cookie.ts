@@ -18,8 +18,8 @@ export const setCookie = (name, value, expire) => {
   }
 }
 
-export const getCookie = key =>
-  pipe(
+export const getCookie = (key): string =>
+  pipe<string, string[], string[], string[], string, string, string>(
     split(';'),
     map(trim),
     find(startsWith(key)),
