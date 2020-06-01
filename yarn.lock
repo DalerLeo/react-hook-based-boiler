@@ -1181,6 +1181,13 @@
   resolved "https://registry.yarnpkg.com/@scarf/scarf/-/scarf-1.0.5.tgz#accee0bce88a9047672f7c8faf3cada59c996b81"
   integrity sha512-9WKaGVpQH905Aqkk+BczFEeLQxS07rl04afFRPUG9IcSlOwmo5EVVuuNu0d4M9LMYucObvK0LoAe+5HfMW2QhQ==
 
+"@tinymce/tinymce-react@^3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@tinymce/tinymce-react/-/tinymce-react-3.6.0.tgz#6e33e89b7bb0240c4ffa892a8e1924688f479b4b"
+  integrity sha512-XSyAx9Md9+Ghl3UK0YtBQxaS2dCepqtOKTjYmBS4xTAzSu1UABd44WT84B8CUCd/bdT0fv1Pd51dSbpgJ8713w==
+  dependencies:
+    prop-types "^15.6.2"
+
 "@types/anymatch@*":
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@types/anymatch/-/anymatch-1.3.1.tgz#336badc1beecb9dacc38bea2cf32adf627a8421a"
@@ -7272,10 +7279,10 @@ typescript@^3.9.3:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.3.tgz#d3ac8883a97c26139e42df5e93eeece33d610b8a"
   integrity sha512-D/wqnB2xzNFIcoBG9FG8cXRDjiqSTbG2wd8DMZeQyJlP1vfTkIxH4GKveWaEBYySKIg+USu+E+EDIR47SqnaMQ==
 
-ui-cubic@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/ui-cubic/-/ui-cubic-0.6.0.tgz#055ce2751a64810f0df5b6a0436c18b092db511b"
-  integrity sha512-Fi3Mbt11vRLhzTlkrEeMSKQbhMGWPjxunjBQWaZ2fJGVnV90NPXkQtuWgmZnlPmdIQNZNqgWvxrUiWTAOtKwgg==
+ui-cubic@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/ui-cubic/-/ui-cubic-0.6.1.tgz#d640519522b89a961a59b70063530dedc0108544"
+  integrity sha512-Gyuq1vELy1fwJbNiPCEqN0P4aRobRgXajOEdE8HZyG0EUKdRmzSBe6nA0FpqdO824fIIUhyDDZFAbBQt3v/FnQ==
   dependencies:
     "@babel/plugin-proposal-optional-chaining" "^7.9.0"
     prop-types "^15.7.2"

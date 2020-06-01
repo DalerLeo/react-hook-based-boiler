@@ -1,10 +1,11 @@
-
 import auth from './auth'
 import settings from './settings'
+import website from './website'
 
 const Routes = () => [
   ...auth,
-  ...settings
+  ...settings,
+  ...website
 ]
 
 export default Routes

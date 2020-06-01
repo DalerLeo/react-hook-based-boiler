@@ -43,7 +43,7 @@ export const cubeTheme = {
   },
   input: {
     colors: {
-      background: 'transparent',
+      background: '#fbfbfb',
       hover: '#fbfbfb',
       label: '',
       placeholder: '',

@@ -15,8 +15,8 @@ const SignInContainer = () => {
   const onLogin = async (values) => {
     try {
       const { token } = await onSubmit(values)
-      const response = await checkToken(token)
-      setData(response)
+//      const response = await checkToken(token)
+//      setData(response)
       return history.push(ROUTES.ROOT_PATH)
     } catch (e) {
       return mapResponseToFormError(e)

@@ -1,4 +1,4 @@
-export const API_HOST = 'akkred.uz:8080/'
+export const API_HOST = '64.227.79.215:8080/'
 export const API_ROOT = 'api'
 export const API_VERSION = 'v1'
 export const API_PROTOCOL = 'http'
@@ -8,6 +8,7 @@ const MAIN = 'main'
 export const CHECK_TOKEN = '/main/check_token/%s/'
 export const LOGIN = `${MAIN}/login/`
 export const LOGOUT = `${MAIN}/logout/`
+export const FILE_UPLOAD = `${MAIN}/file/`
 
 export const CLIENT = `${MAIN}/clients`
 export const CLIENT_CREATE = `/${CLIENT}/`
@@ -36,3 +37,10 @@ export const PRODUCT_TYPE_CREATE = `/${PRODUCT_TYPE}/`
 export const PRODUCT_TYPE_ITEM = `/${PRODUCT_TYPE}/%d/`
 export const PRODUCT_TYPE_DELETE = `/${PRODUCT_TYPE}/%d/`
 export const PRODUCT_TYPE_UPDATE = `/${PRODUCT_TYPE}/%d/`
+
+const NEWS = `${MAIN}/news`
+export const NEWS_LIST = `/${NEWS}/`
+export const NEWS_CREATE = `/${NEWS}/`
+export const NEWS_ITEM = `/${NEWS}/%d/`
+export const NEWS_DELETE = `/${NEWS}/%d/`
+export const NEWS_UPDATE = `/${NEWS}/%d/`

@@ -7,13 +7,14 @@ export const MENU_KEYS = {
   MANUFACTURING: 'manufacturing',
   REPORTS: 'reports',
   SETTINGS: 'settings',
+  WEBSITE: 'website',
 }
 
 export default [
   {
-    key: MENU_KEYS.ORDER,
+    key: MENU_KEYS.WEBSITE,
     title: 'Закази',
-    url: ROUTES.ORDER_LIST_PATH,
+    url: ROUTES.NEWS_LIST_PATH,
     children: []
   },
   {
