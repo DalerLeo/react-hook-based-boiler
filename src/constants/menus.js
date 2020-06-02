@@ -8,13 +8,20 @@ export const MENU_KEYS = {
   REPORTS: 'reports',
   SETTINGS: 'settings',
   WEBSITE: 'website',
+  SLIDER: 'slider',
 }
 
 export default [
   {
     key: MENU_KEYS.WEBSITE,
-    title: 'Закази',
+    title: 'News',
     url: ROUTES.NEWS_LIST_PATH,
+    children: []
+  },
+  {
+    key: MENU_KEYS.SLIDER,
+    title: 'Slider',
+    url: ROUTES.SLIDER_LIST_PATH,
     children: []
   },
   {

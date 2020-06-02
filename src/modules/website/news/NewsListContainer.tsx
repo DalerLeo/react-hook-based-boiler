@@ -9,7 +9,7 @@ import NewsList from './components/NewsList'
 const NewsListContainer = (props) => {
   const newsList = useNewsList(EMPTY_OBJ)
   const newsDelete = useNewsDelete(
-    () => null
+    () => newsList.get()
   )
 
   const onEdit = (id) => props.history.push(sprintf(NEWS_UPDATE_URL, id))

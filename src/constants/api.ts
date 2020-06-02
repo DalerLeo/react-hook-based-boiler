@@ -44,3 +44,10 @@ export const NEWS_CREATE = `/${NEWS}/`
 export const NEWS_ITEM = `/${NEWS}/%d/`
 export const NEWS_DELETE = `/${NEWS}/%d/`
 export const NEWS_UPDATE = `/${NEWS}/%d/`
+
+const SLIDER = `${MAIN}/slider`
+export const SLIDER_LIST = `/${SLIDER}/`
+export const SLIDER_CREATE = `/${SLIDER}/`
+export const SLIDER_ITEM = `/${SLIDER}/%d/`
+export const SLIDER_DELETE = `/${SLIDER}/%d/`
+export const SLIDER_UPDATE = `/${SLIDER}/%d/`

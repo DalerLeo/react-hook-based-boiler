@@ -6,6 +6,12 @@ import {
   NewsUpdateContainer
 } from './news'
 
+import {
+  SliderCreateContainer,
+  SliderListContainer,
+  SliderUpdateContainer
+} from './slider'
+
 export default [
   {
     exact: true,
@@ -24,5 +30,23 @@ export default [
     path: ROUTES.NEWS_UPDATE_PATH,
     layout: Layout,
     component: NewsUpdateContainer
+  },
+  {
+    exact: true,
+    path: ROUTES.SLIDER_LIST_PATH,
+    layout: Layout,
+    component: SliderListContainer
+  },
+  {
+    exact: true,
+    path: ROUTES.SLIDER_CREATE_PATH,
+    layout: Layout,
+    component: SliderCreateContainer
+  },
+  {
+    exact: true,
+    path: ROUTES.SLIDER_UPDATE_PATH,
+    layout: Layout,
+    component: SliderUpdateContainer
   },
 ]

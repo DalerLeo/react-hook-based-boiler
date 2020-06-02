@@ -1,14 +1,19 @@
+import { NEWS_LIST_PATH } from 'constants/routes'
 import React from 'react'
 import { mapResponseToFormError } from 'utils/form'
+import { getSerializedData } from 'utils/get'
+import { fields } from 'modules/website/news/components/NewsCreateForm'
+import { useHistory } from 'react-router-dom'
 import { useNewsCreate } from '../hooks'
 import NewsCreate from './components/NewsCreate'
 
-const NewsCreateContainer = (props) => {
+const NewsCreateContainer = () => {
   const createNews = useNewsCreate()
-
+  const history = useHistory()
   const onSubmit = (values) => {
-    return createNews.post(values)
-      .then(() => props.getList())
+    const data = getSerializedData(fields, values)
+    return createNews.post(data)
+      .then(() => history.push(NEWS_LIST_PATH))
       .catch(mapResponseToFormError)
   }
 

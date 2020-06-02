@@ -18,8 +18,8 @@ export const cubeTheme = {
       main: '#333541',
       light: '#e0ecfc',
       dark: '',
-      hover: '#8F90A6',
-      active: '#2F80ED',
+      hover: '#555',
+      active: '#444',
       focus: ''
     },
     secondary: {

@@ -7,7 +7,7 @@ import { TOnSubmit } from 'types'
 import { DrawerSkeleton } from 'components/Skeletons'
 import { Box } from 'components/UI'
 import { DetailMenu } from 'components/Menu'
-import NewsCreateForm from './NewsCreateForm'
+import SliderCreateForm from './SliderCreateForm'
 
 type Props = {
     initialValues: Record<string, any>;
@@ -16,16 +16,16 @@ type Props = {
     onSubmit: TOnSubmit
 }
 
-const NewsUpdate: FunctionComponent<Props> = props => {
+const SliderUpdate: FunctionComponent<Props> = props => {
   return (
     <>
-      <DetailMenu title="News Update"/>
+      <DetailMenu title="Slider Update"/>
       <Box padding="25px">
         <DrawerSkeleton loading={props.loading}>
           <Form
             onSubmit={props.onSubmit}
             initialValues={props.initialValues}
-            component={NewsCreateForm}
+            component={SliderCreateForm}
           />
         </DrawerSkeleton>
       </Box>
@@ -33,4 +33,4 @@ const NewsUpdate: FunctionComponent<Props> = props => {
   )
 }
 
-export default NewsUpdate
+export default SliderUpdate

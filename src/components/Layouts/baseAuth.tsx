@@ -29,8 +29,7 @@ const baseAuth = (WrappedComponent) => {
       const cookieToken = getCookie('token')
       this.state = {
         cookieToken,
-//        isAuth: Boolean(cookieToken)
-        isAuth: true
+        isAuth: Boolean(cookieToken)
       }
     }
 
@@ -42,7 +41,7 @@ const baseAuth = (WrappedComponent) => {
       const clearData = () => dispatch({ TYPE: CLEAR })
       const fetchingData = () => dispatch({ TYPE: PENDING })
 
-      if (!this.state.isAuth && this.state.cookieToken && isNil(state.data)) {
+      if (this.state.cookieToken && isNil(state.data)) {
         fetchingData()
         onSubmit(this.state.cookieToken)
           .then(response => {

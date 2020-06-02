@@ -40,3 +40,35 @@ export const useNewsDetail = (id) => {
 
   return { get, state }
 }
+
+
+export const useSliderDelete = (onSuccess) => {
+  return useDeleteConfirm<TProductTypeItem>({
+    api: API.SLIDER_DELETE,
+    onSuccess,
+  })
+}
+
+export const useSliderList = (params: TUseListParams) => {
+  const { pickParams = DEFAULT_PICK_PARAMS } = params
+  const { get, state } = useGetApi<TData<TProductTypeItem>>(API.SLIDER_LIST)
+  const searchParams = usePickSearchParams(pickParams)
+  useCompareEffect(() => { get() }, [searchParams])
+
+  return { get, state }
+}
+
+export const useSliderCreate = () => {
+  return usePostApi<TProductTypeItem>(API.SLIDER_CREATE)
+}
+
+export const useSliderUpdate = () => {
+  return usePutApi<TProductTypeItem>(API.SLIDER_UPDATE)
+}
+
+export const useSliderDetail = (id) => {
+  const { get, state } = useGetApi<TProductTypeItem>(sprintf(API.SLIDER_ITEM, id))
+  useEffect(() => { get() }, [])
+
+  return { get, state }
+}

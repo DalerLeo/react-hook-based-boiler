@@ -2,7 +2,7 @@
 export const CATEGORY_LIST = [
   {
     id: 'technology',
-    name: 'technologu'
+    name: 'technology'
   },
   {
     id: 'markets',

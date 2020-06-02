@@ -27,3 +27,11 @@ export const NEWS_ITEM_PATH = `/${NEWS}/${ID}`
 export const NEWS_ITEM_URL = `/${NEWS}/%d`
 export const NEWS_UPDATE_PATH = `/${NEWS}/${ID}`
 export const NEWS_UPDATE_URL = `/${NEWS}/%d`
+
+const SLIDER = 'slider'
+export const SLIDER_LIST_PATH = `/${SLIDER}`
+export const SLIDER_CREATE_PATH = `/${SLIDER}/create`
+export const SLIDER_ITEM_PATH = `/${SLIDER}/${ID}`
+export const SLIDER_ITEM_URL = `/${SLIDER}/%d`
+export const SLIDER_UPDATE_PATH = `/${SLIDER}/${ID}`
+export const SLIDER_UPDATE_URL = `/${SLIDER}/%d`

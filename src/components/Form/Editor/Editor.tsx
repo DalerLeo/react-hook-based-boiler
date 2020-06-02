@@ -10,6 +10,7 @@ const TinyEditor = (props) => {
 
     input.onChange(content)
   }
+  console.warn('VVVV: ', input.value)
   return (
     <>
       <InputLabel>{label}</InputLabel>
