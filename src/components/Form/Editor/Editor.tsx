@@ -10,7 +10,6 @@ const TinyEditor = (props) => {
 
     input.onChange(content)
   }
-  console.warn('VVVV: ', input.value)
   return (
     <>
       <InputLabel>{label}</InputLabel>
@@ -30,6 +29,7 @@ const TinyEditor = (props) => {
             `undo redo | formatselect | bold italic | 
             alignleft aligncenter alignright | 
             bullist numlist outdent indent | help`,
+          paste_data_images: true,
           image_advtab: true,
           images_upload_url: `http://64.227.79.215:8080/main/file/?token=${getCookie('token')}`
         }}
