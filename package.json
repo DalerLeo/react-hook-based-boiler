@@ -64,7 +64,7 @@
   },
   "dependencies": {
     "@tinymce/tinymce-react": "^3.6.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "final-form": "^4.20.0",
     "final-form-arrays": "^3.0.2",
     "history": "^4.10.1",
